@@ -178,6 +178,7 @@ body {
 
     .cabecalho__menu {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .apresentacao {
@@ -186,6 +187,10 @@ body {
     }
 
     .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .contato {
         width: auto;
     }
 }
