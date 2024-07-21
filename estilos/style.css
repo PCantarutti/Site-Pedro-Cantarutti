@@ -14,6 +14,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     box-sizing: border-box;
     background-color: var(--cor-primaria);
@@ -21,12 +25,20 @@ body {
 }
 
 .cabecalho {
-    padding: 2% 0% 0% 15%;
+    padding: 0% 0% 0% 0%;
 }
 
 .cabecalho__menu {
     display: flex;
-    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    position: fixed;
+    background-color: var(--cor-primaria);
+    height: 4rem;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cabecalho__menu__link {
@@ -44,6 +56,14 @@ body {
     color: var(--cor-terciaria);
     transition: all 0.5s;
   }
+
+  nav a.active {
+    padding: 0.8rem;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    color: #AB5757;
+  }
   
   .cabecalho__menu__link:focus,
   .cabecalho__menu__link:hover {
@@ -53,8 +73,8 @@ body {
   
   .cabecalho__menu__link:focus:after,
   .cabecalho__menu__link:hover:after {
-    width: 100%;
-    left: 0%;
+    width: 80%;
+    left: 10%;
   }
   
   .cabecalho__menu__link:after {
@@ -71,12 +91,34 @@ body {
     transition-property: width, left;
   }
 
+section {
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+
+#inicio {
+    justify-content: center;
+}
+
+#sobre__mim {
+    justify-content: flex-start;
+}
+
+#portifolio {
+    justify-content: flex-start;
+}
+
+#curriculo {
+    justify-content: flex-start;
+}
+
 .apresentacao {
-    padding: 5.5% 13%;
+    padding: 0% 5% 5% 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 82px;
+    gap: 30vh;
+    flex-direction: column;
 }
 
 .apresentacao__conteudo {
@@ -84,6 +126,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: row-reverse;
 }
 
 .apresentacao__conteudo__titulo {
@@ -117,7 +167,7 @@ body {
 
 .apresentacao__links__navegacao {
     display: flex;
-    width: 54%;
+    width: 40%;
     border-radius: 50px;
     text-align: center;
     font-size: 1.5rem;
@@ -141,7 +191,8 @@ body {
 }
 
 .minha__foto {
-    width: 35%;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 102px;
     background: var(--cor-primaria);
     box-shadow:  9px 9px 5px #a9a9a9, -9px -9px 22px #ffffff;
@@ -173,20 +224,33 @@ body {
 
 @media (max-width: 1200px) {
     .cabecalho {
-        padding: 4%;
+        padding: 0%;
     }
 
     .cabecalho__menu {
         justify-content: center;
         flex-wrap: wrap;
+        position: fixed;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .minha__foto {
+        width: 35%;
     }
 
     .apresentacao {
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 5%;
     }
 
     .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .contato {
         width: auto;
     }
 }

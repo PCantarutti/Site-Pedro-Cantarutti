@@ -9,14 +9,19 @@
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Inicio</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="">Portifolio</a>
-            <a class="cabecalho__menu__link" href="">Currículo</a>
+            <a class="cabecalho__menu__link" href="#inicio">Inicio</a>
+            <a class="cabecalho__menu__link" href="#sobre__mim">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="#portifolio">Portfólio</a>
+            <a class="cabecalho__menu__link" href="#curriculo">Currículo</a>
         </nav>
     </header>  
     <main class="apresentacao">
-        <section class="apresentacao__conteudo">
+        
+        <div class="container">
+
+        <img class="minha__foto" src="fotos/Foto-perfil.png" alt="Foto de Pedro Cantarutti">
+        
+        <section id="inicio" class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">
                 Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end de qualidade!</strong>
             </h1>
@@ -34,8 +39,40 @@
                     GitHub
                 </a>
             </div>
+        </div>
         </section>
-        <img class="minha__foto" src="fotos/Foto-perfil.png" alt="Foto de Pedro Cantarutti">
+            
+        <section id="sobre__mim" class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
+            <p class="apresentacao__conteudo__texto">Sou um profissional dinâmico com experiência em funções administrativas, suporte de T.I e resolução de problemas. Minha trajetória profissional é marcada pela habilidade em gerenciar múltiplas tarefas, fornecer suporte técnico eficaz e solucionar desafios de forma eficiente e proativa. Estou em busca de novas oportunidades que me permitam aplicar minhas competências e contribuir para o sucesso da organização</p>
+
+            <p class="apresentacao__conteudo__texto">Possuo experiência nas linguagens: JavaScript, HTML, CSS, Python, React e MySQL.</p>
+        </section>
+
+        <section id="portifolio" class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Portfólio</h1>
+            <p class="apresentacao__conteudo__texto">
+
+            </p>
+
+            <p class="apresentacao__conteudo__texto">
+
+            </p>
+        </section>
+
+        <section id="curriculo" class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Currículo</h1>
+            <p class="apresentacao__conteudo__texto">
+
+            </p>
+
+            <p class="apresentacao__conteudo__texto">
+
+            </p>
+        </section>
+
+    <script src="script.js"></script>
+
     </main>
     <footer class="contato">
         <ul style="list-style-type:none;">Contato:
