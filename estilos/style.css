@@ -201,6 +201,7 @@ section {
     background: var(--cor-primaria);
     box-shadow:  9px 9px 5px #a9a9a9, -9px -9px 22px #ffffff;
     transition: all 1s;
+    margin-top: 4rem;
 }
 
 .minha__foto:hover {
@@ -226,6 +227,26 @@ section {
     text-align: center;
 }
 
+@media(max-width: 658px) {
+    .cabecalho__menu {
+        padding-bottom: 5.625rem;
+    }
+
+    .minha__foto {
+        margin-top: 10rem;
+        width: 70%;
+    }
+
+    section{
+        min-height: 100vh;
+        padding-top: 10rem;
+    }
+
+    section#inicio.apresentacao__conteudo {
+        padding-top: 7.5rem;
+    }
+}
+
 @media (max-width: 1200px) {
     .cabecalho {
         padding: 0%;
@@ -239,10 +260,6 @@ section {
 
     .container {
         flex-direction: column;
-    }
-
-    .minha__foto {
-        width: 35%;
     }
 
     .apresentacao {
