@@ -245,6 +245,10 @@ section {
     section#inicio.apresentacao__conteudo {
         padding-top: 7.5rem;
     }
+    
+    .apresentacao__links__navegacao {
+        width: 60%;
+    }
 }
 
 @media (max-width: 1200px) {
