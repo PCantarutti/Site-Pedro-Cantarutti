@@ -1,0 +1,83 @@
+.afazer {
+    display: none;
+}
+
+.container__portfolio {
+    width: 100%;
+}
+
+.apresentacao__portfolio__titulo {
+    text-align: center;
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+    font-weight: 100;
+}
+
+.grid__portfolio {
+    margin-top: 6em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(auto);
+    gap: 7em;
+}
+
+.item__portfolio {
+    transition: all 0.5s;
+    border-radius: 30px;
+    padding: auto;
+    text-align: center;
+    position: relative;
+}
+
+.tooltip-descricao {
+    visibility: hidden;
+    width: 50%;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 105%;
+    left: 38%;
+    margin-left: -80px;
+    opacity: 0;
+    transition: 0.5s all;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  5px 5px 10px #afafaf, -5px -5px 10px #ffffff;
+    transform: scale(1.1);
+  }
+
+.item__portfolio:hover {
+    border-radius: 30px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  5px 5px 10px #afafaf, -5px -5px 10px #ffffff;
+    transform: scale(1.1);
+}
+
+.item__portfolio:hover .tooltip-descricao {
+    visibility: visible;
+    opacity: 1;
+}
+
+.grid__img {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.site-solo {
+    max-width: 80%;
+    height: auto;
+}
+
+.descricao__img {
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+    padding: 1em;
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+}

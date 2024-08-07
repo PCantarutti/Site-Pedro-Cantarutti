@@ -1,0 +1,65 @@
+.apresentacao__sobre__titulo{
+    text-align: center;
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+    font-weight: 100;
+}
+
+.sobre-texto {
+    margin-top: 10%;
+}
+
+.container__icones {
+    display: flex;
+    justify-content: center;
+}
+
+.tooltip__sobre {
+    position: relative;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: var(--cor-terciaria);
+    color: #fff;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -80px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--cor-terciaria) transparent;
+  }  
+
+.tooltip__sobre:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.linguagens {
+    width: 100px;
+    padding: 1.5em;
+    margin-top: 2%;
+}
+
+.sobre-subtitulo {
+    margin-top: 5%;
+    text-align: center;
+}

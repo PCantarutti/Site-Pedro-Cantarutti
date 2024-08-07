@@ -1,69 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Cantarutti</title>
-    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="#inicio">Home</a>
-            <a class="cabecalho__menu__link" href="#sobre__mim">About me</a>
-            <a class="cabecalho__menu__link" href="#portifolio">Portfolio</a>
-            <a class="cabecalho__menu__link" href="#curriculo">curriculum</a>
+            <a class="cabecalho__menu__link" href="#inicio">Inicio</a>
+            <a class="cabecalho__menu__link" href="#sobre__mim">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="#portfolio">Portfólio</a>
+            <a class="cabecalho__menu__link" href="#curriculo">Currículo</a>
         </nav>
     </header>  
     <main class="apresentacao">
         
-        <div class="container">
+        <div class="container__inicio">
 
         <img class="minha__foto" src="fotos/Foto-perfil.png" alt="Foto de Pedro Cantarutti">
         
         <section id="inicio" class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">
-                Take your digital business to another level <strong class="titulo-destaque">with a quality Front-end!</strong>
+                Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um código de qualidade!</strong>
             </h1>
             <p class="apresentacao__conteudo__texto">
-                Hello World! I am <strong class="nome">Pedro Cantarutti</strong>, a Full-Stack Student specializing in <strong>JavaScript, React, HTML and CSS</strong>. I help small businesses and designers put good ideas into practice. Let's talk?
+                Olá! Sou <strong class="nome">Pedro Cantarutti</strong>, Estudante Full-Stack com especialidade em <strong>JavaScript, Sass, HTML e CSS</strong>. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?
             </p>
             <div class="apresentacao__links">
-                <h2 class="apresentacao__links__subtitulo">Access my networks:</h2>
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
                 <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/pedro-cantarutti-3255b2240/">
-                    <img src="icones/linkedin.png" style="filter: invert(26%) sepia(27%) saturate(1152%) hue-rotate(314deg) brightness(85%) contrast(95%);">
+                    <img class="icones" src="icones/linkedin.png">
                     Linkedin
                 </a>
                 <a class="apresentacao__links__navegacao" href="https://github.com/PCantarutti">
-                    <img src="icones/github.png" style="filter: invert(26%) sepia(27%) saturate(1152%) hue-rotate(314deg) brightness(85%) contrast(95%);">
+                    <img class="icones" src="icones/github.png">
                     GitHub
-                    </a>
-                </div>
-            </section>
+                </a>
+            </div>
+        </section>
         </div>
             
         <section id="sobre__mim" class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">About me</h1>
-            <p class="apresentacao__conteudo__texto">I am a dynamic professional with experience in administrative functions, IT support, and problem-solving. My career is marked by the ability to manage multiple tasks, provide effective technical support, and solve challenges efficiently and proactively. I am seeking new opportunities that will allow me to apply my skills and contribute to the success of an organization or project.
-
-</p>
-
-            <p class="apresentacao__conteudo__texto">I have experience in languages: JavaScript, HTML, CSS, Python, React and MySQL.</p>
+            <h1 class="apresentacao__sobre__titulo">Sobre mim</h1>
+            <p class="apresentacao__conteudo__texto sobre-texto">Sou um profissional dinâmico com experiência em funções administrativas, suporte de T.I e resolução de problemas. Minha trajetória profissional é marcada pela habilidade em gerenciar múltiplas tarefas, fornecer suporte eficaz e solucionar desafios de forma eficiente e proativa. Esse é um dos diferencias que levo para minha jornada como Dev fullstack, além das minhas habilidades técnicas.</p>
+            <h2 class="apresentacao__conteudo__texto sobre-subtitulo">Minha stack de tecnologias:</h2>
+            <div class="container__icones">
+                <div class="tooltip__sobre">
+                    <img class="linguagens icones" src="icones/html-5.png" alt="">
+                    <div class="tooltiptext">HTML</div>
+                </div>
+                <div class="tooltip__sobre">
+                    <img class="linguagens icones" src="icones/css-3.png" alt="">
+                    <div class="tooltiptext">CSS</div>
+                </div>
+                <div class="tooltip__sobre">
+                    <img class="linguagens icones" src="icones/sass.png" alt="">
+                    <div class="tooltiptext">Sass</div>
+                </div>
+                <div class="tooltip__sobre">
+                    <img class="linguagens icones" src="icones/python.png" alt="">
+                    <div class="tooltiptext">Python</div>
+                </div>
+                <div class="tooltip__sobre">
+                    <img class="linguagens icones" src="icones/js.png" alt="">
+                    <div class="tooltiptext">JavaScript</div>
+                </div>
+                <div class="tooltip__sobre">
+                    <img class="linguagens icones" src="icones/mysql.png" alt="">
+                    <div class="tooltiptext">MySQL</div>
+                </div>
+            </div>
         </section>
-
-        <section id="portifolio" class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Portfolio</h1>
-            <p class="apresentacao__conteudo__texto">
-
-            </p>
-
-            <p class="apresentacao__conteudo__texto">
-
-            </p>
+        
+        <div class="container__portfolio">
+        <section id="portfolio" class="apresentacao__portfolio">
+            <h1 class="apresentacao__portfolio__titulo">Portfólio</h1>
+            <div class="grid__portfolio">
+                <div class="item__portfolio">
+                    <a href="https://pcantarutti.github.io/Atividade-Alura-books/"><img class="grid__img" src="fotos/portfolio/AluraBooks.png" alt="">
+                    <p class="descricao__img">E-commerce "AluraBooks"</p></a>
+                    <div class="tooltip-descricao"><p>HTML | CSS | JavaScript</p></div>
+                </div>
+                <div class="item__portfolio "><a href="https://pcantarutti.github.io/Alura-plus/"><img class="grid__img site-solo" src="fotos/portfolio/Alura+.png" alt=""></a>
+                    <p class="descricao__img">Landing page "AluraPlus"</p>
+                    <div class="tooltip-descricao"><p>HTML | CSS</p></div>
+                </div>
+                <div class="item__portfolio afazer"><a href=""><img class="grid__img" src="fotos/portfolio/mockup site-duplo.png" alt=""></a>
+                    <p class="descricao__img"></p>
+                    <div class="tooltip-descricao"><p></p></div>
+                </div>
+                <div class="item__portfolio afazer"><a href=""><img class="grid__img" src="fotos/portfolio/mockup site-solo.png" alt=""></a>
+                    <p class="descricao__img"></p>
+                    <div class="tooltip-descricao"><p></p></div>
+                </div>
+                <div class="item__portfolio afazer"><a href=""><img class="grid__img" src="fotos/portfolio/mockup site-solo.png" alt=""></a>
+                    <p class="descricao__img"></p>
+                    <div class="tooltip-descricao"><p></p></div>
+                </div>
+                <div class="item__portfolio afazer"><a href=""><img class="grid__img" src="fotos/portfolio/mockup site-solo.png" alt=""></a>
+                    <p class="descricao__img"></p>
+                    <div class="tooltip-descricao"><p></p></div>
+                </div>
+            </div>
         </section>
+        </div>
 
         <section id="curriculo" class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">curriculum</h1>
+            <h1 class="apresentacao__curriculo__titulo">Currículo</h1>
             <p class="apresentacao__conteudo__texto">
 
             </p>
@@ -77,7 +122,7 @@
 
     </main>
     <footer class="contato">
-        <ul style="list-style-type:none;">contact:
+        <ul style="list-style-type:none;">Contato:
         <li>(31)98361-6906</li>
         <li>pedrocantarutti022@gmail.com</li>
         </ul>
